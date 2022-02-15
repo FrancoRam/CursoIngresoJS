@@ -13,3 +13,5 @@ function mostrar()
 		nombreIngresado = prompt("ingrese su nombre", "Franco"); 
 		alert("su nombre ingresado es:" + nombreIngresado);
 }
+
+

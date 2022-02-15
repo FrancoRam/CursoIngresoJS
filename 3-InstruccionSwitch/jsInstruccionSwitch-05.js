@@ -1,11 +1,36 @@
+/*
+nombre: Ramirez Franco
+Ejercicio N°5
+
+Enunciado:
+Al ingresar una hora, informar:
+si está entre las 7 y las 11 : "Es de mañana.".
+*/
+
 function mostrar()
 {
-	//tomo la hora
-	var horaDelDia =txtIdHora.value;
-	alert(horaDelDia);
-	
-	
+//tomo la hora
+	var horaDelDia;
+	let mensaje;
 
+	horaDelDia = document.getElementById('txtIdHora').value;
+	horaDelDia = parseInt(horaDelDia);
 
+	switch(horaDelDia)
+	{
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+		case 11:
+			mensaje="Es de mañana";
+		break;
 
-}//FIN DE LA FUNCIÓN
+		default:
+			mensaje="No es una hora acorde a la mañana"
+		break;
+	}
+
+	alert(mensaje);
+}//FIN FUNCTION	
+
